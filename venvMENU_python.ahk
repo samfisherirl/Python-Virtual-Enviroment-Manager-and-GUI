@@ -1,4 +1,5 @@
-﻿#SingleInstance Force
+; Place in folder where you'd like py venv or installers
+#SingleInstance Force
 
 #Requires AutoHotkey v2
 #Warn all, Off
@@ -38,18 +39,17 @@ class MyGui_Create
 
 	}
 	launch_click(*) {
+		;Launch VENV in command window by finding nearest activate.bat file below directory
 		if (G.PID = 0) {
 			G.openCommandPrompt()
 		}
 		G.findNearest_venv_Folder()
 		G.activator()
-		; Send the text to the inactive Notepad edit control.
-		; The third parameter is omitted so the last found window is used.
+		
 	}
 	create_click(*) {
 		G.has_command_window_been_launched(1)
-		; Send the text to the inactive Notepad edit control.
-		; The third parameter is omitted so the last found window is used.
+		;Creates and Launches VENV in command window, in folder with this file 
 		G.ControlSendTextToCMD("python -m venv venv")
 		G.sendEnter()
 		G.findNearest_venv_Folder()
@@ -158,30 +158,3 @@ class MyGui_Create
 	}
 
 }
-
-;
-
-; class launch_click
-; {
-; 	__new(){
-; 		this.cmdActive := false
-; 		this.PID := false
-; 		this.cmdActive := false
-; 		return
-
-; 	}
-; 	launch(*) {
-; 		Run "cmd.exe", , "Min", &PID  ; Run Notepad minimized.
-; 		WinWait "ahk_pid " PID  ; Wait for it to appear.
-; 		this.PID := PID
-
-; 		; Send the text to the inactive Notepad edit control.
-; 		; The third parameter is omitted so the last found window is used.
-; 		ControlSend "This is a line of text in the notepad window.{Enter}", , "ahk_pid " PID
-; 		ControlSendText "Notice that {Enter} is not sent as an Enter keystroke with ControlSendText.", , "ahk_pid " PID
-; 		ControlSend "{Enter}",, "ahk_pid " PID
-; 		Msgbox "Press OK to activate the window to see the result."
-; 		WinActivate "ahk_pid " PID  ; Show the result.
-; 	return
-; 	}
-; 	}
