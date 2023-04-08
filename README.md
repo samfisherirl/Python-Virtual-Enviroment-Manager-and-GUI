@@ -1,4 +1,4 @@
- ![image](https://user-images.githubusercontent.com/98753696/230724165-50b70695-1b6a-4d5d-aacb-1807251b19ee.png)
+![image](https://user-images.githubusercontent.com/98753696/230727068-7f8b0028-efb6-444a-9820-6bbd6dcfa243.png)
 
 simple Class based, AHK v2 GUI I wrote to show basic methods for GUIs and ControlSendText. I made extra extra notes, and kept everything object oriented.
 
