@@ -1,4 +1,5 @@
- 
+ ![image](https://user-images.githubusercontent.com/98753696/230724165-50b70695-1b6a-4d5d-aacb-1807251b19ee.png)
+
 simple Class based, AHK v2 GUI I wrote to show basic methods for GUIs and ControlSendText. I made extra extra notes, and kept everything object oriented.
 
 This is an AutoHotkey script that creates a graphical user interface (GUI) and provides buttons to launch Python virtual environments and run different packaging tools such as Nuitka, AutoPytoEXE, CXFreeze, and PyInstaller.
@@ -12,7 +13,5 @@ The "findNearest_venv_Folder" method is used to find the nearest virtual environ
 The "ControlSendTextToCMD" method sends text to the command prompt window, and the "sendEnter" method sends an "Enter" key press to the window.
 
 Overall, the script provides an easy-to-use interface for creating and managing virtual environments and packaging Python scripts.
-
-![image](https://user-images.githubusercontent.com/98753696/230463949-4fda8b66-09c2-4ffe-b914-b8a78c54eed1.png)
 
 
