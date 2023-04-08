@@ -1,4 +1,5 @@
-![image](https://user-images.githubusercontent.com/98753696/230727068-7f8b0028-efb6-444a-9820-6bbd6dcfa243.png) simple Class based, AHK v2 GUI I wrote to show basic methods for GUIs and ControlSendText. I made extra extra notes, and kept everything object oriented.
+![image](https://user-images.githubusercontent.com/98753696/230727106-7954dd8d-ef71-4188-8ced-9aedd3ad9904.png)
+simple Class based, AHK v2 GUI I wrote to show basic methods for GUIs and ControlSendText. I made extra extra notes, and kept everything object oriented.
 
 This is an AutoHotkey script that creates a graphical user interface (GUI) and provides buttons to launch Python virtual environments and run different packaging tools such as Nuitka, AutoPytoEXE, CXFreeze, and PyInstaller.
 
